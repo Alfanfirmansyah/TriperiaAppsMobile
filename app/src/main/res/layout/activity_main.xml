@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Category "
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:textColor="@color/coklat"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                >
+                <ImageView
+                    android:src="@drawable/pantai"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/pantai"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+
+                    />
+                <ImageView
+                    android:src="@drawable/gunung"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/gunung"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+                <ImageView
+                    android:src="@drawable/musium"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/musium"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+                <ImageView
+                    android:src="@drawable/airterjun"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/airterjun"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:text="Pantai"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/quicksand"
+                    android:id="@+id/tpantai"
+
+                    />
+                <TextView
+                    android:text="Gunung"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="6dp"
+                    android:fontFamily="@font/quicksand"
+                    />
+                <TextView
+                    android:text="Musium"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="6dp"
+                    android:fontFamily="@font/quicksand"
+                    />
+                <TextView
+                    android:text="Air Terjun"
+                    android:fontFamily="@font/quicksand"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/taman"
+                    android:src="@drawable/taman"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                >
+            <TextView
+                android:text="Taman"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/quicksand"
+
+                />
+            </TableRow>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latest Tours"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:gravity="left"
+                android:textColor="@color/coklat"
+                android:layout_weight="1"
+                android:fontFamily="@font/quicksand_medium"
+                android:textSize="16sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:id="@+id/seeall"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/quicksand_medium"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container2"
+            android:orientation="vertical"
+            ></LinearLayout>
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:columnWidth="120dp"
+            android:gravity="center"
+            android:numColumns="2" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

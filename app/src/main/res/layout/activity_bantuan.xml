@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:background="@android:color/white"
+    tools:context=".BantuanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/triperia"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Bantuan"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic2"
+                android:drawablePadding="4dp"
+                android:background="#4D000000"
+                android:elevation="10dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="@string/_735"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_hanya_5_buah"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_text"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

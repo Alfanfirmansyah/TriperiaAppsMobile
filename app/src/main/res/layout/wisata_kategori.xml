@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+
+    >
+
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:corner_radius="20dp"
+        android:background="@color/massala"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/a1"
+            android:scaleType="fitStart"
+            android:id="@+id/imgFood"
+
+            />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/ljudul"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/imgFood"
+            android:layout_marginTop="-65dp"
+            android:textSize="20sp"
+            android:text="Food name"/>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/lpin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/ljudul"
+            android:textSize="14sp"
+            android:text="Food name"/>
+
+
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
